@@ -13,4 +13,5 @@ Challenges
 ### Reversing
 ### Pwn
 ### Web
+[Spotlight](web/Spotlight)
 ### Stego
