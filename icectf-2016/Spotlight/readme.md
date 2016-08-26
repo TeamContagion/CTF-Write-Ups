@@ -8,11 +8,11 @@ Solution
 
 You are given the following website, your cursor becomes a small flashlight that when scrolling around the page you see various words but nothing we are looking for.
 
-![](./website.png)
+![](./website.PNG)
 
 If you open up Inspector (Chrome in this case) and go to the "Console" tab the answer is in the debug log!
 
-![](./debug.png)
+![](./debug.PNG)
 
 
 Flag: 'IceCTF{5tup1d_d3v5_w1th_th31r_l095}'
