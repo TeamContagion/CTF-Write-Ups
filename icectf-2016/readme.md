@@ -11,6 +11,7 @@ Challenges
 ### Crypto
 * [Rotated](Crypto/Rotated)
 * [Substituted](Crypto/Substituted)
+* [l33tcrypt](Crypto/l33tcrypt)
 
 ### Forensics
 * [Time Traveler](Forensics/Time Traveler)
