@@ -19,7 +19,7 @@ In this case, I'm going to brute force it with [Hashcat](https://hashcat.net/has
 
 ![](./cracked.PNG)
 
-You will find that the password is 'Vo83*' which matches our password requirements as described above.
+You will find that the password is <b>Vo83*</b> which matches our password requirements as described above.
 
 ![](./success.PNG)
 
