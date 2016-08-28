@@ -19,7 +19,7 @@ When navigating to this directory we notice another directory called "0f76da769d
 
 There is file in the directory called "secret.jpg" once we open it up... BOOM, theres the flag!
 
-![](./secret.jpg)
+![](./secret.JPG)
 
 Flag: 'IceCTF{tH3_c4t_15_Ou7_oF_THe_b49}'
 
