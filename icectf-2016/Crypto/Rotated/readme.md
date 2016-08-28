@@ -7,9 +7,8 @@ Solution
 
 It's fairly easy to see the hint within "ROTated," that being said lets go right to looking at ROT 5 and ROT 8. One thing to remember in ciphertext like this you need to undo the encoding by doing the <b>reverse</b>.
 
-> Encode: Plaintext -> ROT 5 -> ROT 8
-
-> Decode: Ciphertext -> ROT 8 -> ROT 5
+- Encode: Plaintext -> ROT 5 -> ROT 8
+- Decode: Ciphertext -> ROT 8 -> ROT 5
 
 You can either write a tool yourself or simply find one of many online (here's one)
 
