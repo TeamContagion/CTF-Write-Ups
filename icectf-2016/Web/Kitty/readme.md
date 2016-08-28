@@ -23,4 +23,4 @@ You will find that the password is <b>Vo83*</b> which matches our password requi
 
 ![](./success.PNG)
 
-Flag: 'IceCTF{i_guess_hashing_isnt_everything_in_this_world}''
+Flag: 'IceCTF{i_guess_hashing_isnt_everything_in_this_world}'
