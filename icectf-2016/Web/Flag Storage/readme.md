@@ -34,7 +34,8 @@ Once intercepted it should look like this:
 
 THe next step is the injection, we cannot just enter <b>' or 1=1;#</b>, we must first URL encode it.
 
-URL Character Encoding
+
+URL Character Encoding:
 
   <space> == %20
   
