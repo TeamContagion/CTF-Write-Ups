@@ -34,13 +34,17 @@ Once intercepted it should look like this:
 
 THe next step is the injection, we cannot just enter <b>' or 1=1;#</b>, we must first URL encode it.
 
-> URL Character Encoding
->
-> <space> == %20
-> ' == %27
-> = == %3D
-> ; == %3B
-> # == %23
+URL Character Encoding
+
+  <space> == %20
+  
+  ' == %27
+  
+  = == %3D
+  
+  ; == %3B
+  
+  # == %23
 
 Putting it all together:
 
