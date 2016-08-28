@@ -8,12 +8,8 @@ Solution
 The first thing you want to do is look at the page source, you will notice specific password requirements to even send a POST to the server.
 
 '''
-<form method="post" action="login.php">
-    <label for="username">Username: </label>
-    <input class="u-full-width" type="text" name="username" placeholder="Username" required <b>minlength="5"</b> />  
-    <label for="password">Password: </label>
-    <input id="password" class="u-full-width" type="password" name="password" placeholder="Password" required pattern="[A-Z][a-z][0-9][0-9][\?%$@#\^\*\(\)\[\];:]" />
-	<input type="submit" value="Log In" />
+minlength="5"
+pattern="[A-Z][a-z][0-9][0-9][\?%$@#\^\*\(\)\[\];:]"
 '''
 
 Using this information we can either bruteforce the password since it is a small enough keyspace or use an online tool to crack it.
