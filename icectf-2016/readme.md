@@ -17,6 +17,7 @@ Challenges
 
 ### Misc
 * [All Your Base Are Belong To Us](Misc/All your Base are belong to us)
+* [Search](Misc/Search)
 
 ### Reversing
 
@@ -26,7 +27,9 @@ Challenges
 ### Pwn
 
 ### Web
+* [Flag Storage](Web/Flag Storage)
 * [ImgBlog](Web/ImgBlog)
+* [Kitty](Web/Kitty)
 * [Move Along](Web/Move Along)
 * [Spotlight](Web/Spotlight)
 
