@@ -22,7 +22,7 @@ As you can see in the red font (what I am sending to the server) the very last l
   username=admin&password_plain=admin&password=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
 You can see that I tried admin as the username and admin as the password. Then here is the interesting part, there is a password hash.
-The reason SQL injection of the password field will <b>NOT</b> work is because a hash is submitted and thus your attempt at '' or 1=1;#'' will just be hashed and not work.
+The reason SQL injection of the password field will <b>NOT</b> work is because a hash is submitted and thus your attempt at <b>' or 1=1;#'</b> will just be hashed and not work.
 
 However, this means we need to "escape" the hashing [so to speak] by injecting into the hash field.
 
