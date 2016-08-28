@@ -14,4 +14,5 @@ Challenges
 ### Pwn
 ### Web
 [Spotlight](web/Spotlight)
+[ImgBlog](web/ImgBlog)
 ### Stego
