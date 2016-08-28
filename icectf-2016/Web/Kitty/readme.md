@@ -7,10 +7,11 @@ Solution
 
 The first thing you want to do is look at the page source, you will notice specific password requirements to even send a POST to the server.
 
-'''
-minlength="5"
-pattern="[A-Z][a-z][0-9][0-9][\?%$@#\^\*\(\)\[\];:]"
-'''
+
+> minlength="5"
+
+> pattern="[A-Z][a-z][0-9][0-9][\?%$@#\^\*\(\)\[\];:]"
+
 
 Using this information we can either bruteforce the password since it is a small enough keyspace or use an online tool to crack it.
 
