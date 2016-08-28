@@ -19,7 +19,7 @@ Once you find the session, analyze the TCP Stream.
 
 As you can see in the red font (what I am sending to the server) the very last line contains the following:
 
-'username=admin&password_plain=admin&password=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+  username=admin&password_plain=admin&password=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
 You can see that I tried admin as the username and admin as the password. Then here is the interesting part, there is a password hash.
 The reason SQL injection of the password field will <b>NOT</b> work is because a hash is submitted and thus your attempt at '' or 1=1;#'' will just be hashed and not work.
@@ -32,7 +32,7 @@ Once intercepted it should look like this:
 
 ![](./burp.PNG)
 
-THe next step is the injection, we cannot just enter '' or 1=1;# ', we must first URL encode it.
+THe next step is the injection, we cannot just enter <b>' or 1=1;#</b>, we must first URL encode it.
 
 > URL Character Encoding
 >
