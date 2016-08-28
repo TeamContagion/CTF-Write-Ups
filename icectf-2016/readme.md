@@ -13,6 +13,7 @@ Challenges
 * [Substituted](Crypto/Substituted)
 * [l33tcrypt](Crypto/l33tcrypt)
 * [Contract](Crypto/Contract)
+* [Flagstaff](Crypto/Flagstaff)
 
 ### Forensics
 * [Time Traveler](Forensics/Time Traveler)
