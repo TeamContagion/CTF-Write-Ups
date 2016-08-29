@@ -5,7 +5,7 @@
 Solution
 --------
 
-For this challenge you will need to do SQL Inject (see hint above). Despite being SQLi this is a little more complex than injecting into fields on the webpage.
+For this challenge you will need to do SQL Injection (see hint above). Despite being SQLi this is a little more complex than injecting into fields on the webpage.
 
 If you capture the traffic between you and the server you will see why...
 
