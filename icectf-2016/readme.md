@@ -17,17 +17,26 @@ Challenges
 
 ### Forensics
 * [Time Traveler](Forensics/Time Traveler)
+* [Corrupt Transmission](http://wumb0.in/icectf-2016-corrupt-transmission.html)
 
 ### Misc
 * [All Your Base Are Belong To Us](Misc/All your Base are belong to us)
 * [Search](Misc/Search)
+* [Blue Monday](http://wumb0.in/icectf-2016-blue-monday.html)
+* [Thor is a hacker now](http://wumb0.in/icectf-2016-thor-is-a-hacker-now.html)
 
 ### Reversing
+* [A Strong Feeling](http://wumb0.in/icectf-2016-a-strong-feeling.html)
 
 ### Recon
 * [Complacent](Recon/Complacent)
 
 ### Pwn
+* [ROPi](http://wumb0.in/icectf-2016-ropi.html)
+* [Demo](http://wumb0.in/icectf-2016-demo.html)
+* Drumpf Hotels (coming soon)
+* Dear Diary (coming soon)
+* So Close (coming soon)
 
 ### Web
 * [Flag Storage](Web/Flag Storage)
@@ -37,3 +46,4 @@ Challenges
 * [Spotlight](Web/Spotlight)
 
 ### Stego
+* [#VAPENATION](http://wumb0.in/icectf-2016-vape-nation.html)
