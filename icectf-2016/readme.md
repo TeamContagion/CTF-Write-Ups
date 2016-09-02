@@ -34,9 +34,9 @@ Challenges
 ### Pwn
 * [ROPi](http://wumb0.in/icectf-2016-ropi.html)
 * [Demo](http://wumb0.in/icectf-2016-demo.html)
+* [So Close](http://wumb0.in/icectf-2016-so-close.html)
 * Drumpf Hotels (coming soon)
 * Dear Diary (coming soon)
-* So Close (coming soon)
 
 ### Web
 * [Flag Storage](Web/Flag Storage)
