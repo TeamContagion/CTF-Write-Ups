@@ -1,0 +1,57 @@
+Morse Code:  thereisnomeaninginthismessagedonotseekforoneyouwillfailwhyareyouevendecodingthiswowwhatawasteoftimeyouregoingtorunoutoftimeatthisratetrololo
+Plaintext:   Agent G: Awesome Work!\Encoded payload uses this alphabet: ,-.0123456789abcefhiklmoprst\http://ctf.greggernaut.com/its-just-a-one-time-thing  (\ == newline)
+Hex bytes are xor.
+
+--------------
+0
+thereisnomeani
+15:2F:20:3C:31:69:14:74:6F:0C:32:24:3D:26
+Agent G: Aweso
+--------------
+1
+nginthismessag
+23:22:69:19:3B:3A:22:72:47:00:3D:30:2E:23
+me Work!
+Encod
+--------------
+2
+edonotseekforo
+20:20:6F:3E:2E:2D:3F:2A:24:2F:66:3A:21:2A
+ed payload use
+--------------
+3
+neyouwillfailw
+3D:65:2D:27:3C:24:69:2D:20:36:29:28:2E:32
+s this alphabe
+--------------
+4
+hyareyouevende
+3C:63:61:7E:68:77:7F:64:77:65:71:7B:72:72
+t: ,-.01234567
+--------------
+5
+codingthiswoww
+7B:76:25:2B:2D:22:32:20:20:38:3B:22:38:27
+89abcefhiklmop
+--------------
+6
+hatawasteoftim
+3A:32:20:4B:3F:35:27:24:7F:60:69:37:3D:2B
+rst
+http://ctf
+--------------
+7
+eyouregoingtor
+6B:3E:3D:30:35:22:22:3D:27:2F:32:20:61:31
+.greggernaut.c
+--------------
+8
+unoutoftimeatt
+3A:23:60:3C:20:3C:6B:3E:3C:3E:31:6C:35:79
+om/its-just-a-
+--------------
+9
+hisratetrololo
+27:27:36:7F:35:3D:28:31:7F:3B:24:26:22:28
+one-time-thing
+--------------
