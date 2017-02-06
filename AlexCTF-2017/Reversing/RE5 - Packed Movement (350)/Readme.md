@@ -1,8 +1,6 @@
-This was the final reversing challenge in AlexCTF 2017. You can download it [here](move) (MD5: `ca6fd408e10d7d358bb10c8124ff7862`)
-
-The challenge description was:
-
 >Being said that move instruction is enough to build a complete computer, anyway move on while you can.
+>
+>[move](move)
 
 
 The first thing I did was to put this into my vagrant box, run `file` on it, and then execute it.
