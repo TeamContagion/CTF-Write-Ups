@@ -39,7 +39,8 @@ Aside from the smoke rising from the central container, we can see another diffe
 Now, the challenge question asks us to find which *component* was altered in the plant. I thought that maybe the pressure gauges had been altered to not allow flow to the right side containers, but that was not the answer. I tried other names, like "valve", but those weren't correct either. I guessed "pressure" since that was the thing that changed throughout the video, and it ended up being the correct answer.
 
 **Flag:**
-```
+
+```lintingerrorsbad
 CTF{pressure}
 ```
 
@@ -57,7 +58,7 @@ I went down a rabbit hole of trying to understand what exact values were being s
 Eventually, I spotted something:
 ![Finding the first packet comment](writeup-images/packet-comment-spotted.png)
 
-Packet comments? I had no idea those were a thing. This one revealed a hint to the third part of this challenge, so I noted the packet number down and looked into packet comments. It turns out you can see what packets contain comments by applying a display filter of `pkt_comment` or by going to `Analyze > Expert Information`.
+Packet comments? I had no idea those were a thing. This one revealed a hint to the third part of this challenge, so I noted the packet number down and did some research on packet comments. It turns out you can see what packets contain comments by applying a display filter of `pkt_comment` or by going to `Analyze > Expert Information`.
 
 After applying the filter, I saw 5 packets that had comments attached to them. While some contained information relevant to other parts of this challenge, the comment on the fourth packet in this list (packet 7117) tells us that the point of explosion has been found:
 ![Finding the second flag encoded in a packet comment](writeup-images/second-flag-found.png)
@@ -70,7 +71,7 @@ echo 'Q1RGe00wREJVNV9SRTREX1IxR0hUfQ==' | base64 --decode
 
 **Flag:**
 
-```
+```lintingerrorsbad
 CTF{M0DBU5_RE4D_R1GHT}
 ```
 
@@ -78,16 +79,31 @@ CTF{M0DBU5_RE4D_R1GHT}
 
 > Can you find the setpoint value of the attacked component? HINT: A setpoint value does not change under any circumstance. (Flag format: CTF{(value)})
 
-I actually found this one before finding the second flag due to my scrutinizing of every Modbus-related packet in the packet capture file. Let's start by breaking down the contents of a Modbus packet:
+I actually solved this one before finding the second flag due to my scrutinizing of every Modbus-related packet in the packet capture file. Let's start by trying to define what a setpoint value even is. A setpoint value can be defined as a target value that's set for a system/process. It is a value that the control system aims to achieve through the adjusting of another process value.
 
+Next, let's look at the data stored within a Modbus packet, using Wireshark:
+![modbus registers](writeup-images/modbus-data-breakdown.png)
 
+The important thing to pay attention to are the different registers. These hold different numbers that are related to the operation of the system/process using Modbus to communicate. But which one is a setpoint value?
+
+Take note of the hint, that a setpoint value doesn't change under any circumstance. Using all the information we've learned thus far, we can guess that we're looking for a value within the Modbus registers that doesn't change. After looking through multiple packets, I concluded that the value that doesn't change is `65535`. I wrapped that value in the flag format, submitted it, and it was correct!
+
+**Flag:**
+
+```lintingerrorsbad
+CTF{65535}
+```
 
 ## Flag 4: True or False [20 points]
 
 > What type of data is stored in register coils? (Flag format: CTF{datatype})
 
+This question doesn't really focus on the packet capture file at all, but rather requires a basic understanding of how Modbus works. We already know a little bit about registers, so let's expand on that.
 
-Task 3:
-    - constant value is 65535, only constant value across registers in packets
-Task 4:
-    - register coils store binary data
+Doing some research on Modbus registers, I found that there are different types: Input Register, Holding Register, Discrete Input, and Coil. Coil? That sounds exactly like what we're looking for. I found that register coils hold single bit output values, either a 0 or a 1. True or False. I tried "bits" as the answer but that didn't work.
+
+Well, another term for "bit" is "binary value", so what if we try "binary"? Wrapping it in the flag format, the answer is correct, and the challenge is complete!
+
+```lintingerrorsbad
+CTF{binary}
+```
